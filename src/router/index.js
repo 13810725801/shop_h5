@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import GoodDetails from '@/views/shops/good_details'
 import Cart from '@/components/Cart'
+import Pay from '@/components/Pay'
 
 Vue.use(Router)
 
@@ -27,6 +28,11 @@ export default new Router({
       path: '/cart',
       name: 'Cart',
       component: Cart
+    },
+    {
+      path: '/shops/pay',
+      name: 'Pay',
+      component: Pay
     }
   ]
 })

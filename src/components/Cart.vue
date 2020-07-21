@@ -9,8 +9,25 @@
 </template>
 
 <script>
+  import CartHeaderView from './CartHeader.vue';
+  import CartMainView from './CartMain.vue';
+  import NavBottomView from './NavBottom.vue';
+
   export default {
-    name: 'Cart'
+    name: 'Cart',
+    data () {
+      return {
+        is_cart:true
+      }
+    },
+    mounted(){
+
+    },
+    components:{
+      CartHeaderView,
+      CartMainView,
+      NavBottomView
+    }
   }
 </script>
 
